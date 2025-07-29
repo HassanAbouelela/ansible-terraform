@@ -17,6 +17,9 @@ including complete resolution of host-group connections, and passing variables t
 Download the content of the src directory (`ansible-terraform.py`, `inventory.tf.yml`) and place them
 somewhere in your ansible path, or your current project.
 
+You can view the resolved inventory using:
+> ansible-inventory -i /path/to/inventory.tf.yml --graph --vars
+
 1. Add the plugin path to the ansible config (`ansible.cfg`):
 
 ```ini
